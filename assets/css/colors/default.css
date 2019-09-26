@@ -32,10 +32,10 @@ hr.clear {
     vertical-align: middle;
 }
 .navbar-custom {
-    background-color: rgba(20, 40, 10, 0.9);
+    background-color: rgba(17, 20, 58, 0.9);
 }
 .bg-dark{
-    background-color: #2B3D22;
+    background-color: rgb(34, 43, 61);
 }
 .bg-light {
     background-color: #FFE;
