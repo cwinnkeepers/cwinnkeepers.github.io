@@ -53,45 +53,35 @@ layout: compress
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="section-scroll" href="#sponsors">Our Members</a></li>
+              <li><a class="section-scroll" href="#exhibitors">Our Members</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <section class="bg-dark-30 bg-dark showcase-page-header module parallax-bg" data-background="assets/images/innkeepersheader.jpg" id="intro">
-        <div class="titan-caption container">
-          <div class="caption-content">
-            <!--<div class="font-alt mb-30 titan-title-size-1"><img src="assets/images/innkeepersheader.jpg" style="width: 500px" /></div>-->
-            <div class="font-alt mb-40 titan-title-size-4">Central Wisconsin Innkeepers<br />Careers</div>
-
-            <p>Click on any of our member logos to find what they're currently hiring for!</p>
-            
-            <a class="section-scroll btn btn-border-w btn-round" target="_blank" href="#sponsors">Our Members</a>
-          </div>
-        </div>
-      </section>
-      <div class="main showcase-page">
-        <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg" id="sponsors">
+        <section class="module-small" id="exhibitors">
           <div class="container">
-            <h1 class="module-title font-alt">Members Now Hiring</h1>
-            <div class="row multi-columns-row">
-              <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/sponsors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
-            </div>
+            <h1 class="module-title font-alt">Featured Exhibitors</h1>
+            <!--<h2 class="content-box-title font-serif text-center"><a target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Want your logo here? Become A Featured Exhibitor!</a></h2>-->
+              <div class="row multi-columns-row">
+                <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
+              </div>
+              <h2 class="content-box-title font-serif text-center">And More!</h2>
           </div>
         </section>
+        
         <section class="module-extra-small bg-dark">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
                 <p>
-                  <img src="assets/images/ExpoLogoTransparency.svg" alt="Central Wisconsin Convention + Expo Center" style="height: 70px" />
+                  <img src="assets/images/cwlodgingtransparency-01.svg" alt="Central Wisconsin Convention + Expo Center" style="height: 70px" />
                 </p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
                     <p>
-                      10101 MARKET STREET, MAILBOX #A20<br/>
+                      123 cw drive<br/>
                       ROTHSCHILD, WI 54474<br/>
-                      P: 715-298-2726   F: 715-298-3616
+                      P: 715-555-5555   F: 715-555-5555
                     </p>
               </div>
             </div>
